@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Papá Peruano</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f5f9;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.enlace {
+    display: block;
+    width: 60%;
+    margin: 12px auto;
+    padding: 15px;
+    background-color: #0055aa;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.enlace:hover {
+    background-color: #003366;
+}
+
+select {
+    font-size: 18px;
+    padding: 12px;
+    width: 60%;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Papá Peruano</h1>
+    <p>Portal sencillo de accesos rápidos y noticias para adultos mayores</p>
+</header>
+
+<section>
+    <h2>📧 Correos Electrónicos</h2>
+    <p>Accede rápidamente a tu correo electrónico.</p>
+
+    <a class="enlace" href="https://mail.google.com" target="_blank">Gmail</a>
+    <a class="enlace" href="https://outlook.live.com" target="_blank">Outlook / Hotmail</a>
+    <a class="enlace" href="https://mail.yahoo.com" target="_blank">Yahoo Mail</a>
+    <a class="enlace" href="https://proton.me/mail" target="_blank">Proton Mail</a>
+</section>
+
+<section>
+    <h2>📰 Diarios del Perú</h2>
+    <p>Consulta los principales medios nacionales.</p>
+
+    <a class="enlace" href="https://elcomercio.pe" target="_blank">El Comercio</a>
+    <a class="enlace" href="https://larepublica.pe" target="_blank">La República</a>
+    <a class="enlace" href="https://peru21.pe" target="_blank">Perú21</a>
+    <a class="enlace" href="https://gestion.pe" target="_blank">Gestión</a>
+    <a class="enlace" href="https://trome.pe" target="_blank">Trome</a>
+</section>
+
+<section>
+    <h2>🏔 Noticias por Región</h2>
+    <p>Selecciona tu región para acceder a noticias locales.</p>
+
+    <select onchange="if (this.value) window.open(this.value);">
+        <option value="">Seleccione su región</option>
+        <option value="https://elcomercio.pe">Lima</option>
+        <option value="https://diarioelpueblo.com.pe">Arequipa</option>
+        <option value="https://diariodelcusco.pe">Cusco</option>
+        <option value="https://eltiempo.pe">Piura</option>
+    </select>
+</section>
+
+<section>
+    <h2>🌎 Noticias Internacionales</h2>
+    <p>Mantente informado sobre el mundo.</p>
+
+    <a class="enlace" href="https://bbc.com/mundo" target="_blank">BBC Mundo</a>
+    <a class="enlace" href="https://cnnespanol.cnn.com" target="_blank">CNN en Español</a>
+    <a class="enlace" href="https://elpais.com" target="_blank">El País</a>
+    <a class="enlace" href="https
