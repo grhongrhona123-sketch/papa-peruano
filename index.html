@@ -1,128 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Papá Peruano</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de accesos rápidos y noticias del Perú para adultos mayores">
+    <title>Papá Peruano | Portal de Noticias y Accesos Rápidos</title>
 
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f2f5f9;
-    color: #333;
-}
+    <style>
+        :root {
+            --azul-oscuro: #003366;
+            --azul-intermedio: #0055aa;
+            --azul-hover: #002244;
+            --fondo-general: #f4f7fb;
+            --texto-principal: #222222;
+            --blanco: #ffffff;
+        }
 
-header {
-    background-color: #003366;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
+        * {
+            box-sizing: border-box;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 42px;
-}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--fondo-general);
+            color: var(--texto-principal);
+            line-height: 1.5;
+        }
 
-header p {
-    font-size: 20px;
-}
+        header {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            padding: 35px 20px;
+            text-align: center;
+        }
 
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
 
-section h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
+        header p {
+            margin: 0;
+            font-size: 1.25rem;
+            opacity: 0.95;
+        }
 
-section p {
-    font-size: 18px;
-    margin-bottom: 25px;
-}
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px 16px;
+        }
 
-.enlace {
-    display: block;
-    width: 60%;
-    margin: 12px auto;
-    padding: 15px;
-    background-color: #0055aa;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 8px;
-}
+        section {
+            background: var(--blanco);
+            border-radius: 12px;
+            padding: 24px 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            text-align: center;
+        }
 
-.enlace:hover {
-    background-color: #003366;
-}
+        section h2 {
+            font-size: 1.6rem;
+            margin: 0 0 8px;
+            color: var(--azul-oscuro);
+        }
 
-select {
-    font-size: 18px;
-    padding: 12px;
-    width: 60%;
-    border-radius: 6px;
-}
+        section p {
+            font-size: 1.1rem;
+            margin: 0 0 18px;
+            color: #555555;
+        }
 
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-</style>
+        .enlace {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 52px;
+            margin: 10px auto;
+            padding: 12px 16px;
+            background-color: var(--azul-intermedio);
+            color: var(--blanco);
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .enlace:hover, .enlace:focus {
+            background-color: var(--azul-hover);
+            transform: translateY(-1px);
+            outline: 3px solid #80bdff;
+        }
+
+        .selector-region {
+            width: 100%;
+            font-size: 1.15rem;
+            padding: 14px;
+            border: 2px solid var(--azul-intermedio);
+            border-radius: 8px;
+            background-color: var(--blanco);
+            color: var(--texto-principal);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Papá Peruano</h1>
-    <p>Portal sencillo de accesos rápidos y noticias para adultos mayores</p>
-</header>
+    <header>
+        <h1>Papá Peruano</h1>
+        <p>Portal sencillo de accesos rápidos y noticias</p>
+    </header>
 
-<section>
-    <h2>📧 Correos Electrónicos</h2>
-    <p>Accede rápidamente a tu correo electrónico.</p>
+    <main>
+        <section>
+            <h2>📧 Correos Electrónicos</h2>
+            <p>Accede directamente a tu bandeja de entrada:</p>
+            <a class="enlace" href="https://mail.google.com" target="_blank" rel="noopener noreferrer">Gmail</a>
+            <a class="enlace" href="https://outlook.live.com" target="_blank" rel="noopener noreferrer">Outlook / Hotmail</a>
+            <a class="enlace" href="https://mail.yahoo.com" target="_blank" rel="noopener noreferrer">Yahoo Mail</a>
+            <a class="enlace" href="https://proton.me/mail" target="_blank" rel="noopener noreferrer">Proton Mail</a>
+        </section>
 
-    <a class="enlace" href="https://mail.google.com" target="_blank">Gmail</a>
-    <a class="enlace" href="https://outlook.live.com" target="_blank">Outlook / Hotmail</a>
-    <a class="enlace" href="https://mail.yahoo.com" target="_blank">Yahoo Mail</a>
-    <a class="enlace" href="https://proton.me/mail" target="_blank">Proton Mail</a>
-</section>
+        <section>
+            <h2>📰 Diarios del Perú</h2>
+            <p>Consulta las principales fuentes informativas:</p>
+            <a class="enlace" href="https://elcomercio.pe" target="_blank" rel="noopener noreferrer">El Comercio</a>
+            <a class="enlace" href="https://larepublica.pe" target="_blank" rel="noopener noreferrer">La República</a>
+            <a class="enlace" href="https://peru21.pe" target="_blank" rel="noopener noreferrer">Perú21</a>
+            <a class="enlace" href="https://gestion.pe" target="_blank" rel="noopener noreferrer">Gestión</a>
+            <a class="enlace" href="https://trome.pe" target="_blank" rel="noopener noreferrer">Trome</a>
+        </section>
 
-<section>
-    <h2>📰 Diarios del Perú</h2>
-    <p>Consulta los principales medios nacionales.</p>
+        <section>
+            <h2>🏔 Noticias por Región</h2>
+            <p>Selecciona tu ciudad para ir a su diario local:</p>
+            <label for="regionSelect" class="sr-only" style="display:none;">Selecciona tu región</label>
+            <select id="regionSelect" class="selector-region" onchange="if(this.value) { window.location.href = this.value; }">
+                <option value="">-- Elige una región --</option>
+                <option value="https://elcomercio.pe">Lima (El Comercio)</option>
+                <option value="https://diarioelpueblo.com.pe">Arequipa (El Pueblo)</option>
+                <option value="https://diariodelcusco.pe">Cusco (El Diario del Cusco)</option>
+                <option value="https://eltiempo.pe">Piura (El Tiempo)</option>
+            </select>
+        </section>
 
-    <a class="enlace" href="https://elcomercio.pe" target="_blank">El Comercio</a>
-    <a class="enlace" href="https://larepublica.pe" target="_blank">La República</a>
-    <a class="enlace" href="https://peru21.pe" target="_blank">Perú21</a>
-    <a class="enlace" href="https://gestion.pe" target="_blank">Gestión</a>
-    <a class="enlace" href="https://trome.pe" target="_blank">Trome</a>
-</section>
+        <section>
+            <h2>🌎 Noticias Internacionales</h2>
+            <p>Infórmate sobre el acontecer global:</p>
+            <a class="enlace" href="https://bbc.com/mundo" target="_blank" rel="noopener noreferrer">BBC Mundo</a>
+            <a class="enlace" href="https://cnnespanol.cnn.com" target="_blank" rel="noopener noreferrer">CNN en Español</a>
+            <a class="enlace" href="https://elpais.com" target="_blank" rel="noopener noreferrer">El País</a>
+            <a class="enlace" href="https://www.dw.com/es" target="_blank" rel="noopener noreferrer">Deutsche Welle (DW)</a>
+        </section>
+    </main>
 
-<section>
-    <h2>🏔 Noticias por Región</h2>
-    <p>Selecciona tu región para acceder a noticias locales.</p>
+    <footer>
+        <p>&copy; 2026 Papá Peruano — Diseñado para lectura cómoda y navegación directa.</p>
+    </footer>
 
-    <select onchange="if (this.value) window.open(this.value);">
-        <option value="">Seleccione su región</option>
-        <option value="https://elcomercio.pe">Lima</option>
-        <option value="https://diarioelpueblo.com.pe">Arequipa</option>
-        <option value="https://diariodelcusco.pe">Cusco</option>
-        <option value="https://eltiempo.pe">Piura</option>
-    </select>
-</section>
-
-<section>
-    <h2>🌎 Noticias Internacionales</h2>
-    <p>Mantente informado sobre el mundo.</p>
-
-    <a class="enlace" href="https://bbc.com/mundo" target="_blank">BBC Mundo</a>
-    <a class="enlace" href="https://cnnespanol.cnn.com" target="_blank">CNN en Español</a>
-    <a class="enlace" href="https://elpais.com" target="_blank">El País</a>
-    <a class="enlace" href="https
+</body>
+</html>
